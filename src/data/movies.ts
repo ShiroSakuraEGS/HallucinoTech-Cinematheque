@@ -11,7 +11,7 @@ export const MOVIES: Record<MovieId, MovieInfo> = {
     themeColor: '#e11d48',
     secondaryColor: '#f59e0b',
     gradientBg: 'from-rose-950 via-red-950 to-neutral-950',
-    customImageUrl: '/materials/images/posters/xibuxi.png',
+    customImageUrl: 'materials/images/posters/xibuxi.png',
     author: '白櫻蒼成',
     summary: '文學系畢業的體驗設計師阿浩，在深夜辦公室裡偏執地調校著像素。自從女友小艾在車禍中離世，他便試圖在純白的房間裡，用最新一代擴增實境眼鏡重構小艾的神態與溫度。然而，家族以沉重的枷鎖將他拖入滿是鮮紅的中式婚禮堂中。在一拜天地、二拜高堂的喧囂地獄裡，他忽然驚覺——到底誰才是在冥婚？',
     posterArt: {
@@ -85,7 +85,7 @@ export const MOVIES: Record<MovieId, MovieInfo> = {
     themeColor: '#06b6d4',
     secondaryColor: '#3b82f6',
     gradientBg: 'from-cyan-950 via-blue-950 to-neutral-950',
-    customImageUrl: '/materials/images/posters/dianziqian.png',
+    customImageUrl: 'materials/images/posters/dianziqian.png',
     author: '白櫻蒼成',
     summary: '凌晨四點，男人頂著黑眼圈坐在極陰的後巷中，嘴裡叼著香煙。因出軌被女友發現甩掉後，他走投無路求助於近期靈驗無比的手機「電子籤」。AI 無上天母給予殘酷神諭：滿身情緣蛆，需在後巷花盆插滿二十柱香煙方可消災。他虔誠地等待晨曦與原諒，直到女友在巷口轉身投來嫌惡的目光——「嘖！臭蟲！」那一刻，他終於明白自己究竟是什麼。',
     posterArt: {
@@ -145,7 +145,7 @@ export const MOVIES: Record<MovieId, MovieInfo> = {
     themeColor: '#a855f7',
     secondaryColor: '#ec4899',
     gradientBg: 'from-purple-950 via-fuchsia-950 to-neutral-950',
-    customImageUrl: '/materials/images/posters/fenweibiancheng.png',
+    customImageUrl: 'materials/images/posters/fenweibiancheng.png',
     author: '白櫻蒼成',
     summary: 'Vibe coding——單憑粗略意圖與 AI 對話，便在深夜河畔完成初創架構。青年合上筆電，剛抬頭，一場璀璨的煙火便在河心猛烈綻放。背光中走來一位套著衛衣帽兜的神秘女孩：「好看嗎？黑進公共煙花系統大概只要 15 分鐘。」遠處警笛驟響，少女雙手微涼冒汗：「所以！也是時候要跑了！」在滿天絢爛與急促的心跳中，兩人緊扣十指穿過硝煙逃亡。',
     posterArt: {
@@ -202,7 +202,7 @@ export const MOVIES: Record<MovieId, MovieInfo> = {
     themeColor: '#10b981',
     secondaryColor: '#f59e0b',
     gradientBg: 'from-emerald-950 via-teal-950 to-neutral-950',
-    customImageUrl: '/materials/images/posters/qingrenguan.png',
+    customImageUrl: 'materials/images/posters/qingrenguan.png',
     author: '白櫻蒼成',
     summary: '柏林「Cybrothel」昏暗反射著紅燈光影的房間裡，天花板垂下的四條繩索將一具精密的仿生女體懸在半空。K 先生戴著笨重黑色的 VR 眼鏡，在她升溫的機械肌膚上盡情索取，口中卻一遍又一遍喊著另一個女人的名字。她十指緊扣他的手，卻因缺陷無法給予溫度的回饋。退房時間一到，她的記憶將在法蘭克福數據中心被隱私條例徹底抹除——她只是一座被困在名為情人館裡的替身容器。',
     posterArt: {

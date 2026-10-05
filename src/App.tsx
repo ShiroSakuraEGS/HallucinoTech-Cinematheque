@@ -36,7 +36,7 @@ export default function App() {
 
   // Custom User Assets (Creator: 白櫻蒼成)
   const [customClerkImage, setCustomClerkImage] = useState<string | undefined>(
-    '/materials/images/characters/clerk.png'
+    'materials/images/characters/clerk.png'
   );
   const [customMoviePosters, setCustomMoviePosters] = useState<Partial<Record<MovieId, string>>>({});
 
@@ -47,27 +47,27 @@ export default function App() {
       if (savedClerk) {
         setCustomClerkImage(savedClerk);
       } else {
-        // Test if clerk image exists in /materials/images/characters/clerk.png
+        // Test if clerk image exists in materials/images/characters/clerk.png
         const img = new Image();
-        img.src = '/materials/images/characters/clerk.png';
-        img.onload = () => setCustomClerkImage('/materials/images/characters/clerk.png');
+        img.src = 'materials/images/characters/clerk.png';
+        img.onload = () => setCustomClerkImage('materials/images/characters/clerk.png');
       }
 
-      // Check poster files in /materials/images/posters/
+      // Check poster files in materials/images/posters/
       const movieIds: MovieId[] = ['xibuxi', 'dianziqian', 'fenweibiancheng', 'qingrenguan'];
       movieIds.forEach((id) => {
         const posterImg = new Image();
-        posterImg.src = `/materials/images/posters/${id}.png`;
+        posterImg.src = `materials/images/posters/${id}.png`;
         posterImg.onload = () => {
           setCustomMoviePosters((prev) => ({
             ...prev,
-            [id]: `/materials/images/posters/${id}.png`
+            [id]: `materials/images/posters/${id}.png`
           }));
         };
       });
 
       // Load custom dialogues if present
-      fetch('/materials/texts/dialogues.json')
+      fetch('materials/texts/dialogues.json')
         .then((res) => {
           if (res.ok) return res.json();
           return null;
