@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Noto Serif TC', serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-vn-serif {
+  font-family: var(--font-serif);
+}
+
+.font-vn-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+/* Film Grain & Cinematic Atmosphere */
+.film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+  background-size: 4px 4px;
+}
+
+.film-vignette {
+  background: radial-gradient(circle at center, transparent 35%, rgba(5, 5, 8, 0.85) 90%);
+}
+
+.screen-scanlines {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25)
+  );
+  background-size: 100% 4px;
+}
+
+/* Vintage light flicker */
+@keyframes filmFlicker {
+  0%, 100% { opacity: 0.98; }
+  25% { opacity: 0.94; }
+  50% { opacity: 1; }
+  75% { opacity: 0.96; }
+}
+
+.animate-film-flicker {
+  animation: filmFlicker 0.18s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.3)); }
+  50% { filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.7)); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar for mobile / story dialog */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 16, 22, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 140, 70, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 140, 70, 0.6);
+}

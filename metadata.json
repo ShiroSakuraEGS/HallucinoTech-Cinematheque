@@ -1,0 +1,11 @@
+{
+  "name": "致幻技電影館",
+  "description": "走入神秘微暗的破舊電影館，透過掃描 QR 碼解鎖迷幻片單與心跳邂逅的視覺小說體驗。",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
